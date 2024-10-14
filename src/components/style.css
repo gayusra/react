@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+  max-width: 500px;
+  border: 1px solid mediumblue;
+  margin: auto;
+}
+
+.header{
+    background-color:palevioletred ;
+    color: whitesmoke;
+}
+.header h1{
+    text-align: center;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+
+    
+}
+ul {
+    width: 100%;
+    list-style: none;
+    padding: 0 0.70rem 0.75rem;
+  }
+
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.55rem 0 0.55rem 0.55rem;
+    margin: 0.55rem 0;
+    background-color: #eee;
+  }
+  .item input[type='checkbox']{
+    text-align: center;
+    height: 48px;
+    width: 48px;
+  }
+  .item > label {
+    font-size: 0.95rem;
+    flex-grow: 1;
+  }
+  .item svg {
+    width: 48px;
+    min-width: 48px;
+    height: 36px;
+    font-size: 1rem;
+    color: steelblue;
+    cursor: pointer;
+  }
+  .item svg:focus, 
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+.para{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.addForm {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0;
+  /* margin-left: 300px; */
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
